@@ -1,0 +1,39 @@
+{
+    "screen_region": {
+        "top": 0,
+        "left": 0,
+        "width": 1920,
+        "height": 1080
+    },
+    "capture_fps": 10,
+    "detection": {
+        "template_threshold": 0.75,
+        "color_detection_enabled": true,
+        "nms_threshold": 30,
+        "bonus_box_hsv": {
+            "purple": { "lower": [120, 50, 50], "upper": [160, 255, 255] },
+            "green":  { "lower": [35, 80, 80],  "upper": [85, 255, 255] },
+            "blue":   { "lower": [90, 50, 50],  "upper": [130, 255, 255] },
+            "red_low":  { "lower": [0, 80, 80],   "upper": [10, 255, 255] },
+            "red_high": { "lower": [170, 80, 80],  "upper": [180, 255, 255] }
+        }
+    },
+    "navigator": {
+        "click_delay_min": 0.4,
+        "click_delay_max": 1.2,
+        "move_delay_min": 1.5,
+        "move_delay_max": 4.0,
+        "random_walk_radius": 300,
+        "collection_wait": 2.0
+    },
+    "safety": {
+        "hp_bar_region": { "top": 30, "left": 30, "width": 200, "height": 20 },
+        "hp_critical_percent": 25,
+        "flee_enabled": true,
+        "check_interval": 0.5
+    },
+    "hotkeys": {
+        "start_stop": "F6",
+        "pause_resume": "F7"
+    }
+}
